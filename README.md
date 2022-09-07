@@ -18,7 +18,7 @@
 <h3 align="center">COVID-19 Statistics</h3>
 
   <p align="center">
-        Use this up to date website that keeps track of weekly covid cases per province or all throughout Canada!
+        Use this up to date website that keeps track of weekly covid cases per province or all throughout Canada! (JSON last updated August 20th 2022)
     <br />
     <a href="https://github.com/RobMadill/COVID-19-Stats"><strong>Explore the docs »</strong></a>
     <br />
