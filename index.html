@@ -1,0 +1,85 @@
+<!-- 
+    Name: Robert Madill
+    Email: madillro@sheridancollege.ca
+    Date: 2022-07-01
+    Description: This is the index page for our second assignment in Mobile Web Development.
+    It contains the layout of the page and the content.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+    <title>COVID-19 Statistics</title>
+</head>
+<h1>COVID-19 Canada</h1>
+<div class="flex-container">
+    <div class="column1">
+        <label>Province</label>
+        <br>
+        <select id="comboProv">
+            <option value="Canada">Canada</option>
+            <option value="Alberta">Alberta</option>
+            <option value="British Columbia">British Columbia</option>
+            <option value="Manitoba">Manitoba</option>
+            <option value="New Brunswick">New Brunswick</option>
+            <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+            <option value="Northwest Territories">Northwest Territories</option>
+            <option value="Nova Scotia">Nova Scotia</option>
+            <option value="Nunavut">Nunavut</option>
+            <option value="Ontario">Ontario</option>
+            <option value="Prince Edward Island">Prince Edward Island</option>
+            <option value="Quebec">Quebec</option>
+            <option value="Saskatchewan">Saskatchewan</option>
+            <option value="Yukon">Yukon</option>
+        </select>
+        <div class="currentWeek">
+            <div id="weekNum"></div>
+            <img id="arrLeft" src="img/arrow_left.svg" alt="arrow_left SVG">
+            <img id="arrRight" src="img/arrow_right.svg" alt="arrow_right SVG">
+        </div>
+        <label>Confirmed Cases</label>
+        <div class="confirmedCases">
+            <div class="ccLabel">Weekly
+                <div id="weekly">
+                </div>
+            </div>
+            <div class="ccLabel"> Total
+                <div id="total"></div>
+            </div>
+        </div>
+        <div id="sourceData"></div>
+    </div>
+    <div class="column2">
+        <canvas id="chart">
+        </canvas>
+    </div>
+    <div class="column3">
+        <canvas id="deathChart">
+        </canvas>
+    </div>
+    <div class="provTable">
+        <table>
+            <thead>
+                <tr>
+                    <th>Week*</th>
+                    <th>Weekly Confirmed</th>
+                    <th>Total Confirmed</th>
+                    <th>Weekly Deaths</th>
+                    <th>Total Deaths</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+        </table>
+    </div>
+</div>
+</body>
+
+</html>
